@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosaic labs</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <section class="logo_div">
+            <img src="assets/logo.png" alt="logo">
+            <span>Logo</span>
+        </section>
+        <section class="search_div">
+            <div class="select_box">
+                <div class="sub1"><span style="margin-left: 1rem;">Sheet 1</span> <img style="margin-right: 1rem;" src="assets/down.png" alt=""></div>
+                <hr style="margin-left: 1rem;" width="90%">
+                <div class="sub2"><span style="margin-left: 1rem;">Type your query</span></div>
+            </div>
+            <button style="display: flex; align-items: center; justify-content: center; font-size: 1.1rem; width: 100%; height: 3rem; background-color: #F5461B; border: none; color: white;">Execute <img style="margin-left: 10px;" src="assets/arrow.png" alt="arrow"></button>
+        </section>
+        <section class="content_div">
+            <div class="tabs">
+                <button class="tab active">Query History</button>
+                <button class="tab">Tab Name 1</button>
+                <button class="tab">Tab Name 2</button>
+            </div>
+            <div id="queryHistory" class="content">
+                <div class="entry">
+                    <p><span>1</span>Lorem ipsum dolor sit ame consectetur.Lorem ipsum dolor sit ame consectetur.</p>
+                    <img style="background-color: black; border-radius: 50%; padding: 6px;" src="assets/loading.png" alt="Refresh Icon">
+                </div>
+                <div class="entry">
+                    <p><span>2</span>Lorem ipsum dolor sit ame consectetur.Lorem ipsum dolor sit ame consectetur.</p>
+                    <img style="padding: 6px; border-radius: 50%; background-color: #DCDCDC;" src="assets/buffering.png" alt="Loading Icon">
+                </div>
+                <div class="entry">
+                    <p><span>3</span>Lorem ipsum dolor sit ame consectetur.Lorem ipsum dolor sit ame consectetur.</p>
+                    <img style="padding: 6px; border-radius: 50%; background-color: #DCDCDC;" src="assets/tick.png" alt="Checkmark Icon">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
